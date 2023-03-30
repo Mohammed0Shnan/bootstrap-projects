@@ -1,0 +1,480 @@
+:root {
+    --c-dark: #212529
+}
+
+body {
+    line-height: 1.7;
+    color: #777;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    transition: all 0.4s ease;
+}
+
+/* HELPERS */
+.section-padding {
+    padding-top: 140px;
+    padding-bottom: 140px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.bg-cover {
+    background-position: center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat;
+}
+
+/* NAVBAR */
+.navbar {
+    box-shadow: 0px 5px 10px rgba(122, 104, 104, 0.11);
+}
+
+.navbar .navbar-nav a {
+    color: rgba(0, 0, 0, 0.518);
+    font-weight: 600;
+}
+
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link.active {
+    color: orange;
+}
+
+.navbar .navbar-brand {
+    font-weight: 800;
+    font-size: 30px;
+
+}
+
+.navbar .navbar-brand span {
+    font-weight: 800;
+    color: orange;
+
+}
+
+.navbar .btn:hover {
+    background-color: rgb(202, 137, 17);
+}
+
+.btn-brand {
+    background-color: orange;
+    color: white;
+    border-radius: 0px;
+    font-weight: 600;
+    height: 3.2rem;
+    text-align: center;
+
+    padding: 0.7rem 2rem 0.5rem 2rem;
+}
+
+
+/* HOME SECTION */
+#home {}
+
+.slide1 {
+    background: linear-gradient(rgba(0, 0, 0, 0.295), rgba(0, 0, 0, 0.071)), url('/assets/resturant_1.jpg');
+}
+
+#home .title {
+    color: white;
+    font-size: 1.5rem;
+    letter-spacing: 0;
+}
+
+#home .slide1 .title::after,
+#home .slide1 .title::before {
+    content: ' ';
+    background-color: white;
+    height: 3px;
+    width: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    letter-spacing: 0;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+@media (max-width: 750px) {
+    #home .title {
+        color: white;
+        font-size: 1.2rem;
+        letter-spacing: 0;
+    }
+
+    #home .slide1 .title::before,
+    #home .slide1 .title::after {
+        content: ' ';
+        background-color: white;
+        height: 0px;
+        width: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+        letter-spacing: 0;
+        display: inline-block;
+        vertical-align: middle;
+    }
+}
+
+#home h1 {
+    color: white;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+}
+
+#home .btn {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border-radius: 0px;
+}
+
+#home .btn:hover {
+    background-color: rgba(45, 77, 193);
+}
+
+#home .btn-brand-submit {
+    background-color: blue;
+    color: white;
+    font-weight: 600;
+}
+
+#home .btn-brand-contact {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+}
+
+.slide2 {
+    background: linear-gradient(rgba(0, 0, 0, 0.295), rgba(0, 0, 0, 0.071)), url('/assets/resturant_2.jpg');
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    height: 60px;
+    width: 50px;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.6);
+    margin-left: 20px;
+    margin-right: 20px;
+    box-shadow: 0px 0px 30px white;
+}
+
+/* ABOUT SECTION */
+#about .about-img {
+    position: relative;
+    height: 38rem;
+    width: 100%;
+}
+
+#about .about-img .back-img {
+    height: 100%;
+    width: 90%;
+    background: url('/assets/resturant_4.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#about .about-img .front-img {
+    position: absolute;
+    height: 16rem;
+    width: 16rem;
+    top: 40%;
+    right: 0;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.432);
+    border-radius: 100%;
+    background: url('/assets/resturant_3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#about h3 {
+    font-weight: 700;
+    color: black;
+    letter-spacing: 1;
+    font-size: 3rem;
+}
+
+#about .line {
+    height: 3px;
+    width: 5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background-color: orange;
+}
+
+#about p {
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.336);
+    letter-spacing: 1;
+    font-size: 1.2rem;
+}
+
+/* MENU SECTION */
+#menu h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: 1;
+    margin-bottom: 2rem;
+    color: black;
+}
+
+#menu p {
+    font-size: 1.3rem;
+    font-weight: 500;
+    max-width: 50rem;
+    color: rgba(0, 0, 0, 0.637);
+    margin: 2rem auto 0 auto;
+}
+
+#menu .tabs {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+#menu .tabs .nav-pills .nav-link {
+    color: black;
+    border-radius: 100px;
+    background-color: white;
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.1);
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+#menu .tabs .nav-pills .nav-link.active {
+    color: rgb(255, 255, 255);
+    background-color: orange;
+}
+
+#menu .menu-card {
+    height: 30rem;
+    width: 100%;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+
+}
+
+
+#menu .menu-card span {
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.436);
+}
+
+#menu .menu-card img {
+    height: 45%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px 10px 0px 0px;
+
+}
+
+#menu .menu-card .menu-card-body {
+    padding: 1rem;
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+#menu .menu-card .menu-card-body h2 {
+    color: rgba(0, 0, 0, 0.756);
+    font-weight: 700;
+    line-height: 1.2;
+
+}
+
+#menu .menu-card .menu-card-body p {
+    color: rgba(0, 0, 0, 0.541);
+    font-weight: 600;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-top: 0;
+}
+
+/* FEATURES SECTION */
+
+#features {
+    background: linear-gradient(rgba(0, 0, 0, 0.304), rgba(0, 0, 0, 0.664)), url('/assets/resturant_5.jpg');
+    background-position: center;
+    background-size: cover;
+
+}
+
+#features .intro-text h1 {
+    color: white;
+    font-weight: 600;
+    letter-spacing: -1;
+}
+
+#features .intro-text p {
+    margin-top: 2rem;
+    color: white;
+    font-weight: 500;
+    font-size: 1.1rem;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 900px;
+}
+
+#features .feature-card {
+    height: 20rem;
+    width: 100%;
+    border: 2px solid white;
+    padding: 2rem 3rem 2rem 3rem;
+    text-align: center;
+    display: grid;
+    align-items: center;
+    overflow: hidden;
+
+}
+
+#features .feature-card i {
+    color: white;
+    font-size: 2.5rem;
+    background-color: orange;
+    padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+    margin: auto;
+}
+
+#features .feature-card h2 {
+    color: white;
+    font-size: 1.8rem;
+    letter-spacing: -1;
+}
+
+#features .feature-card p {
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+
+/* FOOTER */
+footer{
+    background-color: rgb(255, 255, 255);
+  }
+  footer .footer-top .navbar-brand{
+    color: black !important;
+    font-weight: 800;
+  }
+  footer .footer-top .navbar-brand span{
+    color: orange;
+    font-weight: 800;
+  }
+  footer .footer-top .line{
+    height: 4px;
+    background-color:orange;
+    width: 50px;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+  
+  }
+  footer .footer-top h5{
+   
+    color:black;
+    font-weight: 700;
+  
+  }
+  footer .footer-top p{
+    color:rgba(0, 0, 0, 0.651);
+  }
+  footer .footer-top .social-links a{
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    color: white;
+    display: inline-flex;
+    align-items: center;
+    border-radius: 10%;
+    text-align: center;
+    font-weight: 800;
+    justify-content: center;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    margin-right: 0.3rem;
+  }
+  
+  footer .footer-top .social-links a:hover{
+    background-color:orange;
+    color: black;
+  }
+  footer .footer-top .navbar-brand{
+    font-size: 25px;
+    font-weight: 800;
+    color: white;
+  }
+  footer .footer-top .footer-title{
+    font-size: 18px;
+    font-weight: 700;
+    color:black;
+  }
+  footer .footer-top ul{
+    list-style: none;
+    padding: 0;
+  }
+  footer .footer-top ul a{
+    color:rgba(0, 0, 0, 0.607);
+    font-weight: 400;
+    transition: all 0.3s ease;
+    text-decoration: none;
+  
+  }
+  footer .footer-top ul a:hover{
+    color:orange;
+  
+  }
+  footer .footer-bottom{
+    border-top: 1px solid black;
+    padding-bottom: 10px;
+  }
+  footer .footer-bottom p{
+  
+    color:rgba(0, 0, 0, 0.61);
+    font-size: 14;
+    font-weight: 400;
+  }
+  .footer-top .line{
+  
+  }
+  @media (max-width: 750px) {
+    .footer-top .line {
+            margin:auto;
+     } 
+  }
+
+/* MODAL */
+.modal-dialog .modal-content {
+    border-radius: 20px;
+
+}
+
+.modal-dialog .modal-content .modal-body {
+    padding: auto;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.626);
+    font-weight: 700;
+    letter-spacing: 1;
+
+}
+
+.modal-dialog .modal-footer {
+    display: flex;
+    justify-content: center;
+}
+
+.modal-dialog .modal-content .modal-footer .download-btn {
+    color: white;
+    border-radius: 5px;
+    background-color: orange;
+    font-weight: 500;
+
+}
